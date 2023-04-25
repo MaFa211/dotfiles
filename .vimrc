@@ -12,7 +12,7 @@ set undofile
 set incsearch
 set term=screen-256color
 set virtualedit+=onemore
-set colorcolumn=80
+set colorcolumn=
 set number
 
 call plug#begin('~/.vim/plugged')
