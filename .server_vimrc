@@ -15,6 +15,7 @@ set virtualedit+=onemore
 set colorcolumn=
 set number
 
+colorscheme slate 
 "Key Bindings
 inoremap jk <ESC>
 inoremap <ESC> <NOP>
