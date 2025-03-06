@@ -30,3 +30,5 @@ nnoremap <silent> nj o<Esc>k
 nnoremap <silent> n O<Esc>j
 nnoremap <Tab> >> 
 nnoremap <S-Tab> << 
+vnoremap < <gv
+vnoremap > >gv
