@@ -32,3 +32,5 @@ nnoremap <Tab> >>
 nnoremap <S-Tab> << 
 vnoremap < <gv
 vnoremap > >gv
+nnoremap dd "_dd
+nnoremap "0p p
