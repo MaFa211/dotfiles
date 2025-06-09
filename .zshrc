@@ -1,27 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="/home/mats/.oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
@@ -76,7 +52,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
+export PATH="$HOME/.cargo/bin:$PATH"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -94,20 +70,15 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias project="cd /home/mats/Documents/python/amazon"
 alias py="python3"
-alias jupv="source ~/Documents/python/run_jupyter.sh"
-alias jup="jupyter notebook"
-alias uni="cd /home/mats/Documents/University/1_Semester"
-alias datam="cd /home/mats/Documents/University/1_Semester/Data_Mining/Assignments"
-alias icss="cd /home/mats/Documents/University/1_Semester/ICSS/Tutorial"
-alias pdf=okular
-alias copy="xclip -sel clip"
 alias tmux="tmux -2"
+#alias pip="pip3"
+alias repo="~/Documents/bertelsmann/trendllm/"
+alias path="realpath"
+alias gs="git status"
 #Keybindings
 
 
@@ -117,3 +88,5 @@ alias tmux="tmux -2"
 
 
 
+fpath+=/opt/homebrew/share/zsh/site-functions
+autoload -Uz compinit && compinit
