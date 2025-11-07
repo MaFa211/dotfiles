@@ -1,4 +1,3 @@
-
 set noerrorbells
 set tabstop=4 softtabstop=4
 set expandtab
@@ -14,23 +13,29 @@ set term=screen-256color
 set virtualedit+=onemore
 set colorcolumn=
 set number
+set shiftwidth=4      " Number of spaces for each indent level
+set tabstop=4         " Number of spaces a tab counts for
+set softtabstop=4     " Number of spaces for tab in insert mode
+set expandtab         " Convert tabs to spaces
+colorscheme slate
 
-colorscheme slate 
 "Key Bindings
 inoremap jk <ESC>
 inoremap <ESC> <NOP>
-
 vnoremap jk <ESC>
 vnoremap <ESC> <NOP>
-
 cnoremap jk <ESC>
-
 nnoremap <space> i<space><ESC>
 nnoremap <silent> nj o<Esc>k
-nnoremap <silent> n O<Esc>j
-nnoremap <Tab> >> 
-nnoremap <S-Tab> << 
+nnoremap <silent> nk O<Esc>j
+" Override o and O to not enter insert mode
+nnoremap <silent> o o<Esc>
+nnoremap <silent> O O<Esc>
+nnoremap > >>
+nnoremap < <<
 vnoremap < <gv
 vnoremap > >gv
 nnoremap dd "_dd
 nnoremap "0p p
+nnoremap yt ^yg_
+
